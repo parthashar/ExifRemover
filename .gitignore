@@ -1,0 +1,8 @@
+#.gitignore
+*.txt
+*.hcl
+*.tfstate
+*.zip
+.venv
+.terraform
+.DS_STORE
