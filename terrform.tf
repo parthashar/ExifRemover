@@ -141,13 +141,7 @@ resource "aws_iam_role_policy_attachment" "lambda_exceution_policy" {
     role       = aws_iam_role.lamdba_iam_role.name
     policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
-
-/* task 2:
-To extend this further, we have two users User A and User B. Create IAM users with the following access:
-• User A can Read/Write to Bucket A
-• User B can Read from Bucket B
-*/
-
+ 
 resource "aws_iam_user" "A" {
     name = "user_A"
 }
